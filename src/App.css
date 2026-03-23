@@ -1,1 +1,35 @@
-/* App styles - kept minimal for Tailwind-first approach */
+/* Theme-aware app shell using CSS variables */
+.theme-shell {
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+}
+
+.theme-nav {
+  background: var(--card-bg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem 1rem;
+}
+
+.theme-nav a {
+  color: var(--text-color);
+  opacity: 0.85;
+}
+
+.theme-nav a:hover {
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.theme-nav a.active {
+  color: var(--primary-color);
+  font-weight: 600;
+  opacity: 1;
+}
+
+.theme-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

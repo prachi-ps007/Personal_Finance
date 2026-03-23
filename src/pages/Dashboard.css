@@ -1,0 +1,155 @@
+.dashboard {
+  position: relative;
+  min-height: calc(100vh - 8rem);
+  padding: 2rem 0;
+}
+
+.dashboard__content {
+  position: relative;
+  z-index: 1;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.dashboard__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.dashboard__balance {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  background: var(--card-bg);
+  border-radius: 1rem;
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard__balance-label {
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dashboard__balance-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: -0.03em;
+}
+
+.dashboard__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard__card {
+  padding: 1.25rem;
+  background: var(--card-bg);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(167, 139, 250, 0.15);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard__card-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  opacity: 0.7;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.dashboard__card-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.dashboard__card--income .dashboard__card-value {
+  color: #86efac;
+}
+
+.dashboard__card--expense .dashboard__card-value {
+  color: #fca5a5;
+}
+
+.dashboard__recent {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  border: 1px solid rgba(167, 139, 250, 0.15);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.dashboard__section-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dashboard__transactions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard__tx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.08);
+  gap: 1rem;
+}
+
+.dashboard__tx:last-child {
+  border-bottom: none;
+}
+
+.dashboard__tx-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.dashboard__tx-title {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.dashboard__tx-meta {
+  font-size: 0.75rem;
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+.dashboard__tx-amount {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.dashboard__tx-amount.income {
+  color: #86efac;
+}
+
+.dashboard__tx-amount.expense {
+  color: #fca5a5;
+}

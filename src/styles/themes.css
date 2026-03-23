@@ -1,0 +1,58 @@
+/**
+ * Global Theme System
+ * Route-based themes applied via data-theme attribute
+ */
+
+:root {
+  /* Default fallback */
+  --bg-gradient: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+  --primary-color: #3b82f6;
+  --secondary-color: #1d4ed8;
+  --card-bg: #ffffff;
+  --text-color: #1f2937;
+}
+
+/* 1. Constellation — dark, stars, purple/blue gradient */
+[data-theme="constellation"] {
+  --bg-gradient: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  --primary-color: #a78bfa;
+  --secondary-color: #818cf8;
+  --card-bg: rgba(30, 27, 75, 0.85);
+  --text-color: #e9d5ff;
+}
+
+/* 2. Sky — light blue, clouds */
+[data-theme="sky"] {
+  --bg-gradient: linear-gradient(180deg, #bae6fd 0%, #7dd3fc 40%, #e0f2fe 100%);
+  --primary-color: #0284c7;
+  --secondary-color: #0ea5e9;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --text-color: #0c4a6e;
+}
+
+/* 3. Road — dark asphalt, white stripes */
+[data-theme="road"] {
+  --bg-gradient: linear-gradient(180deg, #374151 0%, #1f2937 50%, #111827 100%);
+  --primary-color: #f9fafb;
+  --secondary-color: #d1d5db;
+  --card-bg: rgba(55, 65, 81, 0.9);
+  --text-color: #f3f4f6;
+}
+
+/* 4. Garden — green, fresh, earthy */
+[data-theme="garden"] {
+  --bg-gradient: linear-gradient(135deg, #ecfdf5 0%, #a7f3d0 40%, #6ee7b7 100%);
+  --primary-color: #059669;
+  --secondary-color: #047857;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --text-color: #064e3b;
+}
+
+/* 5. Bloom — soft pink, floral tones */
+[data-theme="bloom"] {
+  --bg-gradient: linear-gradient(135deg, #fdf2f8 0%, #fbcfe8 50%, #f9a8d4 100%);
+  --primary-color: #db2777;
+  --secondary-color: #be185d;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --text-color: #831843;
+}
